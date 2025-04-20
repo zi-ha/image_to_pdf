@@ -35,7 +35,7 @@ def process_image(image_path):
 def merge_images_to_pdf(folder_path, output_pdf_path):
     """Merges images in a folder into a single PDF file with natural sorting and progress."""
     image_files = []
-    valid_extensions = (".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff")
+    valid_extensions = (".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp")
     try:
         # Use natural sorting for filenames
         filenames = sorted(os.listdir(folder_path), key=natural_sort_key)
