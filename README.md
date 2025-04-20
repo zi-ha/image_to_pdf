@@ -26,7 +26,7 @@
 ```bash
 pip install Pillow tqdm
 ```
-
+打包命令 pyinstaller --onefile --exclude-module tkinter --exclude-module matplotlib --exclude-module numpy --exclude-module pandas --exclude-module scipy --exclude-module PyQt5 --exclude-module wx --add-data d:\Desktop\漫画\漫画.ico:. --icon d:\Desktop\漫画\漫画.ico --name 漫画转PDF工具 d:\Desktop\漫画\image_to_pdf.py
 ## 文件结构建议
 
 文件组织方式如下：
