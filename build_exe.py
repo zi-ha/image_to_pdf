@@ -55,7 +55,7 @@ def build_exe():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # 源文件路径 - 修正为正确的文件名
-    main_script = os.path.join(current_dir, "image_to_pdf4.0.py")  # 脚本路径
+    main_script = os.path.join(current_dir, "image_to_pdf1.4.2.py")  # 脚本路径
     icon_file = os.path.join(current_dir, "漫画.ico")              # 图标路径
     version_file = os.path.join(current_dir, "version_info.txt")
     
@@ -87,7 +87,7 @@ def build_exe():
         "--exclude-module=matplotlib",  # 排除不需要的模块
         "--exclude-module=numpy",       # 排除不需要的模块
         "--exclude-module=pandas",      # 排除不需要的模块
-        "--exclude-module=scipy",       # 排除不需要的模块
+        "--exclude-module=scipy"，       # 排除不需要的模块
         "--exclude-module=IPython",     # 排除不需要的模块
         "--exclude-module=jupyter",     # 排除不需要的模块
         "--exclude-module=setuptools",  # 排除不需要的模块
