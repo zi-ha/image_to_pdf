@@ -1,0 +1,15 @@
+# 图片转PDF工具 - 依赖库列表
+# Image to PDF Tool - Dependencies
+
+# 核心依赖 / Core Dependencies
+Pillow>=9.0.0          # 图像处理库 / Image processing library
+tqdm>=4.64.0            # 进度条库 / Progress bar library
+
+# 可选依赖 / Optional Dependencies (for development)
+PyInstaller>=5.0        # 打包工具 / Packaging tool (for building executables)
+
+# 兼容性说明 / Compatibility Notes:
+# - Python 3.7+ required
+# - Pillow: 支持所有主流图片格式 (JPG, PNG, BMP, GIF, TIFF, WebP)
+# - tqdm: 提供美观的进度条显示
+# - PyInstaller: 用于打包成可执行文件 (可选)
