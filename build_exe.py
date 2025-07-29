@@ -55,8 +55,8 @@ def build_exe():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # 源文件路径 - 修正为正确的文件名
-    main_script = os.path.join(current_dir, "image_to_pdf4.0.py")
-    icon_file = os.path.join(current_dir, "漫画.ico")
+    main_script = os.path.join(current_dir, "image_to_pdf4.0.py")  # 脚本路径
+    icon_file = os.path.join(current_dir, "漫画.ico")              # 图标路径
     version_file = os.path.join(current_dir, "version_info.txt")
     
     # 检查文件是否存在
@@ -78,7 +78,7 @@ def build_exe():
         main_script,                    # 主脚本文件
         "--onefile",                    # 打包成单个exe文件
         "--console",                    # 显示控制台窗口（改为console，因为需要用户交互）
-        "--name=图片转PDF工具_完整版",    # 输出文件名
+        "--name=图片转PDF工具",    # 输出文件名
         "--clean",                      # 清理临时文件
         "--noconfirm",                  # 不询问覆盖
         "--optimize=2",                 # 优化级别
@@ -124,7 +124,7 @@ def build_exe():
         elapsed_time = time.time() - start_time
         
         # 检查生成的exe文件
-        exe_path = os.path.join(current_dir, "dist", "图片转PDF工具_完整版.exe")
+        exe_path = os.path.join(current_dir, "dist", "图片转PDF工具.exe")
         if os.path.exists(exe_path):
             file_size = get_file_size_mb(exe_path)
             print("\n" + "=" * 50)
